@@ -39,14 +39,14 @@ public class App
     
         
         	//INSERT
- /*     Student student=new Student();
-        student.setId(7);
-        student.setName("Rohan");
-        student.setCity("Barabanki");
-        student.setState("Uttar Pradesh");
-        
-        int result = studentDAO.insert(student);
-        	System.out.println("Studetn added = "+result);*/
+//      Student student=new Student();
+//        student.setId(7);
+//        student.setName("Rohan");
+//        student.setCity("Barabanki");
+//        student.setState("Uttar Pradesh");
+//        
+//        int result = studentDAO.insert(student);
+//        	System.out.println("Studetn added = "+result);
         
         
         	//UPDATE
@@ -63,9 +63,19 @@ public class App
 //        	System.out.println("Deleted rows = "+result);
         
         	//DELETE  //2nd mtdh using user input of studentID pass.
-        System.out.println("Enter the id which is going to delete from the DataBase by u");
+/*        System.out.println("Enter the id which is going to delete from the DataBase by u");
         int id=sc.nextInt();
         int result = studentDAO.delete(id);
-      		System.out.println("Deleted rows = "+result);
+      		System.out.println("Deleted rows = "+result);*/
+        
+        	//SELECT
+/*        Student student = studentDAO.getStudent(5);
+        	System.out.println(student);*/
+        
+        	//MULTIPLE SELECT
+        List<Student> students = studentDAO.getAllStudent();
+        for(Student s:students) {
+        	System.out.println(s);
+        }       
     }
 }
